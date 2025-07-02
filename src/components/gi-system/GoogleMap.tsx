@@ -3,12 +3,12 @@ import { Loader } from '@googlemaps/js-api-loader';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { MapPin } from 'lucide-react';
-
 interface GoogleMapProps {
   className?: string;
 }
-
-export default function GoogleMap({ className = '' }: GoogleMapProps) {
+export default function GoogleMap({
+  className = ''
+}: GoogleMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [apiKey, setApiKey] = useState('');
   const [isApiKeySet, setIsApiKeySet] = useState(false);
@@ -16,7 +16,10 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
 
   // Endereço da empresa
   const address = "Q 402 Núcleo Rural Monjolo Conj. 10 - Recanto das Emas, Brasília - DF, 72630-260";
-  const coordinates = { lat: -15.909569, lng: -48.0539041 }; // Coordenadas exatas do Google Maps
+  const coordinates = {
+    lat: -15.909569,
+    lng: -48.0539041
+  }; // Coordenadas exatas do Google Maps
 
   const handleApiKeySubmit = () => {
     if (apiKey.trim()) {
@@ -25,30 +28,26 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
       loadMap(apiKey);
     }
   };
-
   const loadMap = async (key: string) => {
     if (!mapRef.current) return;
-
     try {
       const loader = new Loader({
         apiKey: key,
         version: 'weekly',
         libraries: ['places', 'geometry']
       });
-
       const google = await loader.load();
-      
       const map = new google.maps.Map(mapRef.current, {
         center: coordinates,
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'off' }]
-          }
-        ]
+        styles: [{
+          featureType: 'poi',
+          elementType: 'labels',
+          stylers: [{
+            visibility: 'off'
+          }]
+        }]
       });
 
       // Adicionar marcador da empresa
@@ -92,13 +91,11 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
 
       // Abrir InfoWindow por padrão
       infoWindow.open(map, marker);
-
       setMapLoaded(true);
     } catch (error) {
       console.error('Erro ao carregar o mapa:', error);
     }
   };
-
   useEffect(() => {
     // Verificar se já existe uma API key salva
     const savedApiKey = localStorage.getItem('google_maps_api_key');
@@ -108,60 +105,16 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
       loadMap(savedApiKey);
     }
   }, []);
-
   if (!isApiKeySet) {
-    return (
-      <div className={`h-96 bg-muted/50 border border-primary/20 rounded-lg flex items-center justify-center p-8 ${className}`}>
-        <div className="text-center space-y-4 max-w-md">
-          <MapPin className="w-12 h-12 text-primary mx-auto" />
-          <h3 className="text-lg font-semibold text-foreground">Google Maps API Key</h3>
-          <p className="text-sm text-muted-foreground">
-            Para exibir o mapa interativo, você precisa inserir sua chave de API do Google Maps.
-            <br />
-            <a 
-              href="https://developers.google.com/maps/documentation/javascript/get-api-key" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              Obtenha sua chave aqui
-            </a>
-          </p>
-          <div className="space-y-3">
-            <Input
-              type="text"
-              placeholder="Insira sua Google Maps API Key"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              className="w-full"
-            />
-            <Button 
-              onClick={handleApiKeySubmit}
-              disabled={!apiKey.trim()}
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              Carregar Mapa
-            </Button>
-          </div>
-          <p className="text-xs text-muted-foreground">
-            A chave será salva no seu navegador para próximas visitas.
-          </p>
-        </div>
-      </div>
-    );
+    return;
   }
-
-  return (
-    <div className={`h-96 border border-primary/20 rounded-lg overflow-hidden ${className}`}>
+  return <div className={`h-96 border border-primary/20 rounded-lg overflow-hidden ${className}`}>
       <div ref={mapRef} className="w-full h-full" />
-      {!mapLoaded && (
-        <div className="absolute inset-0 bg-muted/50 flex items-center justify-center">
+      {!mapLoaded && <div className="absolute inset-0 bg-muted/50 flex items-center justify-center">
           <div className="text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-2"></div>
             <p className="text-sm text-muted-foreground">Carregando mapa...</p>
           </div>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 }
