@@ -1,8 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, Clock, Award, ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  const backgroundImages = [
+    "/lovable-uploads/f2d0efb7-18bd-4098-88d4-0684857cdd93.png",
+    "/lovable-uploads/97a2b03e-62c8-4d57-9b68-6eec4a6bccf9.png", 
+    "/lovable-uploads/05fab6a7-3064-43a3-a6fd-8cbfc1705910.png"
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
   const handleContactClick = () => {
     const phone = "5561993368116";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";
@@ -21,7 +39,23 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="inicio" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-hero overflow-hidden">
+    <section id="inicio" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen flex items-center">
+      {/* Background Images with Rotation */}
+      <div className="absolute inset-0">
+        {backgroundImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        ))}
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Orange gradient overlay to match brand */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+      </div>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-20 h-20 border-2 border-primary-foreground rounded-full"></div>
