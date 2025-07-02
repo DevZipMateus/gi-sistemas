@@ -106,7 +106,38 @@ export default function GoogleMap({
     }
   }, []);
   if (!isApiKeySet) {
-    return;
+    return (
+      <div className={`h-96 border border-primary/20 rounded-lg overflow-hidden ${className}`}>
+        <div className="h-full bg-muted/50 flex flex-col items-center justify-center p-6 text-center">
+          <MapPin className="w-12 h-12 text-primary mb-4" />
+          <h3 className="text-lg font-semibold text-foreground mb-2">
+            Mapa Interativo
+          </h3>
+          <p className="text-sm text-muted-foreground mb-4 max-w-md">
+            Para visualizar o mapa interativo, é necessário configurar uma chave da API do Google Maps.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-2 w-full max-w-md">
+            <Input
+              type="text"
+              placeholder="Cole sua chave da API do Google Maps"
+              value={apiKey}
+              onChange={(e) => setApiKey(e.target.value)}
+              className="flex-1"
+            />
+            <Button 
+              onClick={handleApiKeySubmit}
+              disabled={!apiKey.trim()}
+              className="whitespace-nowrap"
+            >
+              Carregar Mapa
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground mt-3">
+            <strong>Endereço:</strong> {address}
+          </p>
+        </div>
+      </div>
+    );
   }
   return <div className={`h-96 border border-primary/20 rounded-lg overflow-hidden ${className}`}>
       <div ref={mapRef} className="w-full h-full" />
