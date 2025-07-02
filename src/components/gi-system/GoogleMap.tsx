@@ -15,8 +15,8 @@ export default function GoogleMap({ className = '' }: GoogleMapProps) {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   // Endereço da empresa
-  const address = "Quadra 402 Conjunto 10 Lote 02, Recanto das Emas, Brasília DF";
-  const coordinates = { lat: -15.9014, lng: -48.0781 }; // Coordenadas aproximadas do Recanto das Emas
+  const address = "Q 402 Núcleo Rural Monjolo Conj. 10 - Recanto das Emas, Brasília - DF, 72630-260";
+  const coordinates = { lat: -15.909569, lng: -48.0539041 }; // Coordenadas exatas do Google Maps
 
   const handleApiKeySubmit = () => {
     if (apiKey.trim()) {
