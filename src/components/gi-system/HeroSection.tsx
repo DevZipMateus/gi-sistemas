@@ -56,13 +56,6 @@ export default function HeroSection() {
         {/* Orange gradient overlay to match brand */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
       </div>
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-20 h-20 border-2 border-primary-foreground rounded-full"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 border-2 border-primary-foreground rounded-lg rotate-45"></div>
-        <div className="absolute bottom-40 left-20 w-12 h-12 border-2 border-primary-foreground rounded-full"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 border-2 border-primary-foreground rounded-lg rotate-12"></div>
-      </div>
 
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center space-y-8">
@@ -74,13 +67,13 @@ export default function HeroSection() {
           
           {/* Main Heading */}
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Proteção e 
               <span className="block text-accent">Segurança</span>
               para seu negócio
             </h1>
             
-            <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
               Somos referência em sistemas de combate a incêndio em Brasília DF. 
               Oferecemos soluções completas para manter sua empresa protegida e em conformidade.
             </p>
@@ -101,7 +94,7 @@ export default function HeroSection() {
               variant="outline" 
               size="lg" 
               onClick={scrollToServices}
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="border-white/20 text-white bg-white/5 hover:bg-white/10 backdrop-blur-sm"
             >
               Conheça Nossos Serviços
             </Button>
