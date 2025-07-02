@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Navigation, ArrowRight } from "lucide-react";
+import GoogleMap from "./GoogleMap";
 
 export default function LocationSection() {
   const handleDirectionsClick = () => {
@@ -38,26 +39,9 @@ export default function LocationSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Map Placeholder */}
+          {/* Google Maps */}
           <div className="space-y-6">
-            <Card className="h-96 bg-muted/50 border-primary/20 overflow-hidden group hover:shadow-strong transition-all duration-300">
-              <div className="h-full relative bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <MapPin className="w-16 h-16 text-primary mx-auto" />
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Mapa Interativo</h3>
-                    <p className="text-muted-foreground mb-4">Clique para ver nossa localização no Google Maps</p>
-                    <Button 
-                      onClick={handleDirectionsClick}
-                      className="bg-primary hover:bg-primary-dark text-primary-foreground"
-                    >
-                      <Navigation className="w-4 h-4 mr-2" />
-                      Ver no Google Maps
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </Card>
+            <GoogleMap className="shadow-strong" />
             
             <Card className="p-6 bg-gradient-primary text-primary-foreground shadow-strong">
               <h3 className="text-xl font-bold mb-4">Atendimento Personalizado</h3>
