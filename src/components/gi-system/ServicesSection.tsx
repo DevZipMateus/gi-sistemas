@@ -68,6 +68,12 @@ export default function ServicesSection() {
       title: "Treinamento PPCI",
       description: "Treinamento de funcionários sobre comportamento em caso de incêndio.",
       features: ["Certificado incluso", "Prática e teoria", "Brigada de emergência"]
+    },
+    {
+      icon: Droplets,
+      title: "Sistema de Sprinklers",
+      description: "Instalação e manutenção de sistemas automáticos de sprinklers para extinção de incêndios.",
+      features: ["Ativação automática", "Cobertura total", "Manutenção preventiva"]
     }
   ];
 
