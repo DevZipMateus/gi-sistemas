@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Navigation, ArrowRight } from "lucide-react";
-import StaticMap from "./StaticMap";
+import GoogleMap from "./GoogleMap";
 
 export default function LocationSection() {
   const handleDirectionsClick = () => {
@@ -41,7 +41,7 @@ export default function LocationSection() {
           
           {/* Google Maps */}
           <div className="space-y-6">
-            <StaticMap className="shadow-strong" />
+            <GoogleMap className="shadow-strong" />
             
             <Card className="p-6 bg-gradient-primary text-primary-foreground shadow-strong">
               <h3 className="text-xl font-bold mb-4">Atendimento Personalizado</h3>
