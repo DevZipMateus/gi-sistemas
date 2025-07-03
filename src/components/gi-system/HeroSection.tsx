@@ -7,7 +7,8 @@ export default function HeroSection() {
   const backgroundImages = [
     "/lovable-uploads/f2d0efb7-18bd-4098-88d4-0684857cdd93.png",
     "/lovable-uploads/97a2b03e-62c8-4d57-9b68-6eec4a6bccf9.png", 
-    "/lovable-uploads/05fab6a7-3064-43a3-a6fd-8cbfc1705910.png"
+    "/lovable-uploads/05fab6a7-3064-43a3-a6fd-8cbfc1705910.png",
+    "/lovable-uploads/1b8be904-74a0-4ced-bec1-799d652b2e7d.png"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

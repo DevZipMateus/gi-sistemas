@@ -12,7 +12,7 @@ export default function StaticMap({ className = '' }: StaticMapProps) {
 
   // Endereço da empresa
   const address = "Q 402 Núcleo Rural Monjolo Conj. 10 - Recanto das Emas, Brasília - DF, 72630-260";
-  const coordinates: [number, number] = [-15.909569, -48.0539041];
+  const coordinates: [number, number] = [-15.910315513611, -48.053844451904];
 
   useEffect(() => {
     if (!mapRef.current || mapInstanceRef.current) return;
