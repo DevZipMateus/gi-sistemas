@@ -91,7 +91,7 @@ export default function ContactSection() {
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span className="text-muted-foreground">13+ anos de experiência no mercado</span>
+                  <span className="text-muted-foreground">15+ anos de experiência no mercado</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>

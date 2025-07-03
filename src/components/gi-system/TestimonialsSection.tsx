@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
           </Card>
           
           <Card className="p-6 text-center border-primary/20">
-            <div className="text-2xl font-bold text-primary mb-2">13+</div>
+            <div className="text-2xl font-bold text-primary mb-2">15+</div>
             <div className="text-sm text-muted-foreground">Anos de Experiência</div>
           </Card>
           

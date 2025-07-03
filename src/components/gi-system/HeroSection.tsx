@@ -63,7 +63,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-foreground/20 backdrop-blur-sm border border-primary-foreground/30">
             <Shield className="w-4 h-4 mr-2 text-primary-foreground" />
-            <span className="text-sm font-medium text-primary-foreground">Mais de 13 anos de experiência</span>
+            <span className="text-sm font-medium text-primary-foreground">Mais de 15 anos de experiência</span>
           </div>
           
           {/* Main Heading */}
@@ -71,12 +71,12 @@ export default function HeroSection() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Proteção e 
               <span className="block text-accent">Segurança</span>
-              para seu negócio
+              para o seu patrimônio
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
               Somos referência em sistemas de combate a incêndio em Brasília DF. 
-              Oferecemos soluções completas para manter sua empresa protegida e em conformidade.
+              Soluções completas para manter seu patrimônio protegido e em conformidade com as normas da ABNT.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function HeroSection() {
             
             <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">
               <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">13+ Anos de Experiência</h3>
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">15+ Anos de Experiência</h3>
               <p className="text-primary-foreground/80">Mais de uma década protegendo empresas em Brasília e região</p>
             </Card>
             

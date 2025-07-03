@@ -25,7 +25,7 @@ export default function AboutSection() {
             <span className="text-primary"> Proteção Contra Incêndio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Há mais de 13 anos no mercado, somos especialistas em sistemas de combate a incêndio, 
+            Há mais de 15 anos no mercado, somos especialistas em sistemas de combate a incêndio, 
             oferecendo soluções completas e personalizadas para empresas em Brasília DF.
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function AboutSection() {
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <Shield className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span className="text-muted-foreground">Mais de 13 anos de experiência no mercado</span>
+                  <span className="text-muted-foreground">Mais de 15 anos de experiência no mercado</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Users className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
@@ -83,7 +83,7 @@ export default function AboutSection() {
           {/* Right Content - Stats Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <Card className="p-6 text-center bg-gradient-primary text-primary-foreground shadow-strong">
-              <div className="text-3xl font-bold mb-2">13+</div>
+              <div className="text-3xl font-bold mb-2">15+</div>
               <div className="text-sm">Anos de Mercado</div>
             </Card>
             
