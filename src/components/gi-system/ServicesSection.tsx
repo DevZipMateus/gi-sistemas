@@ -23,7 +23,7 @@ export default function ServicesSection() {
     },
     {
       icon: Droplets,
-      title: "Sistema de Hidrante Groove",
+      title: "Sistema de Hidrante Grooved",
       description: "Instalação e manutenção de hidrantes ranhurados para combate direto ao fogo.",
       features: ["Hidrantes certificados", "Mangueiras resistentes", "Esguichos profissionais"]
     },
