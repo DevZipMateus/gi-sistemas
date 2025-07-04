@@ -41,7 +41,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Gi System LTDA Logo" className="h-16 sm:h-20 md:h-24 w-auto" />
+            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Gi System LTDA Logo" className="h-16 sm:h-20 md:h-20 w-auto" />
             <div className="hidden xs:block">
               <h1 className={`text-lg sm:text-xl font-bold transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`}>Gi System</h1>
               <p className={`text-xs transition-colors ${isInHeroSection ? 'text-white/70' : 'text-muted-foreground'}`}>Combate a Incêndio</p>
