@@ -50,8 +50,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between my-0 py-0">
           {/* Logo */}
-          <div className="text-2xl font-bold text-white">
-            Impulso<span className="text-cyan-300">Empreendedor</span>
+          <div className="flex items-center space-x-3">
+            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Impulso Empreendedor Logo" className="h-12 w-auto" />
+            <div className="text-2xl font-bold text-white">
+              Impulso<span className="text-cyan-300">Empreendedor</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
