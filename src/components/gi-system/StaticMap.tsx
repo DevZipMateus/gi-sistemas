@@ -10,7 +10,7 @@ export default function StaticMap({ className = '' }: StaticMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
 
-  // Endereço da empresa
+  // Endereço do patrimônio
   const address = "Q 402 Núcleo Rural Monjolo Conj. 10 - Recanto das Emas, Brasília - DF, 72630-260";
   const coordinates: [number, number] = [-15.910315513611, -48.053844451904];
 
@@ -46,10 +46,10 @@ export default function StaticMap({ className = '' }: StaticMapProps) {
       popupAnchor: [0, -30]
     });
 
-    // Adicionar marcador da empresa
+    // Adicionar marcador do patrimônio
     const marker = L.marker(coordinates, { icon: customIcon }).addTo(map);
 
-    // Adicionar popup com informações da empresa
+    // Adicionar popup com informações do patrimônio
     marker.bindPopup(`
       <div style="padding: 10px; max-width: 300px; font-family: system-ui, -apple-system, sans-serif;">
         <h3 style="margin: 0 0 8px 0; color: #FF6B35; font-weight: bold; font-size: 16px;">Gi System LTDA</h3>

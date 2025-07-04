@@ -8,7 +8,9 @@ export default function HeroSection() {
     "/lovable-uploads/f2d0efb7-18bd-4098-88d4-0684857cdd93.png",
     "/lovable-uploads/97a2b03e-62c8-4d57-9b68-6eec4a6bccf9.png", 
     "/lovable-uploads/05fab6a7-3064-43a3-a6fd-8cbfc1705910.png",
-    "/lovable-uploads/1b8be904-74a0-4ced-bec1-799d652b2e7d.png"
+    "/lovable-uploads/55fdb0b8-02ee-4379-8853-e8b91f6d4103.png",
+    "/lovable-uploads/6c39c67d-7e06-400d-aa3a-92dc7f8e91cf.png",
+    "/lovable-uploads/12d411c0-414f-4e9e-b3fb-b7f72046344c.png"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -112,7 +114,7 @@ export default function HeroSection() {
             <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">
               <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-primary-foreground mb-2">15+ Anos de Experiência</h3>
-              <p className="text-primary-foreground/80">Mais de uma década protegendo empresas em Brasília e região</p>
+              <p className="text-primary-foreground/80">Mais de uma década protegendo patrimônios em Brasília e região</p>
             </Card>
             
             <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">

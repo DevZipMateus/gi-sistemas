@@ -26,7 +26,7 @@ export default function AboutSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Há mais de 15 anos no mercado, somos especialistas em sistemas de combate a incêndio, 
-            oferecendo soluções completas e personalizadas para empresas em Brasília DF.
+            oferecendo soluções completas e personalizadas para patrimônios em Brasília DF.
           </p>
         </div>
 

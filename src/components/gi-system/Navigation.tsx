@@ -52,7 +52,7 @@ export default function Navigation() {
             <img 
               src="/lovable-uploads/bcc36ae3-ba59-4d9b-b859-6d4ef8984711.png" 
               alt="Gi System LTDA Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
             <div className="hidden sm:block">
               <h1 className={`text-xl font-bold transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`}>Gi System</h1>

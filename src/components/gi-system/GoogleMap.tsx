@@ -14,7 +14,7 @@ export default function GoogleMap({
   const [isApiKeySet, setIsApiKeySet] = useState(false);
   const [mapLoaded, setMapLoaded] = useState(false);
 
-  // Endereço da empresa
+  // Endereço do patrimônio
   const address = "Q 402 Núcleo Rural Monjolo Conj. 10 - Recanto das Emas, Brasília - DF, 72630-260";
   const coordinates = {
     lat: -15.909569,
@@ -50,7 +50,7 @@ export default function GoogleMap({
         }]
       });
 
-      // Adicionar marcador da empresa
+      // Adicionar marcador do patrimônio
       const marker = new google.maps.Marker({
         position: coordinates,
         map: map,
@@ -67,7 +67,7 @@ export default function GoogleMap({
         }
       });
 
-      // InfoWindow com informações da empresa
+      // InfoWindow com informações do patrimônio
       const infoWindow = new google.maps.InfoWindow({
         content: `
           <div style="padding: 10px; max-width: 300px;">

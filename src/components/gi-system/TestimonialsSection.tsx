@@ -6,9 +6,9 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       name: "Maria Silva",
-      company: "Empresa Industrial ABC",
+      company: "Patrimônio Industrial ABC",
       role: "Gerente de Segurança",
-      content: "A Gi System foi fundamental para adequarmos nossa empresa às normas de segurança. Profissionais competentes e serviço de excelente qualidade.",
+      content: "A Gi System foi fundamental para adequarmos nosso patrimônio às normas de segurança. Profissionais competentes e serviço de excelente qualidade.",
       rating: 5
     },
     {
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A satisfação dos nossos clientes é nossa maior recompensa. 
-            Veja o que empresas de Brasília e região falam sobre nossos serviços.
+            Veja o que patrimônios de Brasília e região falam sobre nossos serviços.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export default function TestimonialsSection() {
               Seja Nosso Próximo Cliente Satisfeito
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Junte-se a centenas de empresas que confiam na Gi System para sua proteção contra incêndio. 
+              Junte-se a centenas de patrimônios que confiam na Gi System para sua proteção contra incêndio. 
               Solicite seu orçamento e comprove nossa qualidade.
             </p>
             <Button 

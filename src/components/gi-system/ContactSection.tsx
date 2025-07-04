@@ -33,7 +33,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Solicite seu orçamento gratuito ou tire suas dúvidas conosco. 
-            Nossa equipe está pronta para desenvolver a melhor solução para sua empresa.
+            Nossa equipe está pronta para desenvolver a melhor solução para seu patrimônio.
           </p>
         </div>
 

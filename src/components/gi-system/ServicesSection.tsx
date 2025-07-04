@@ -99,7 +99,7 @@ export default function ServicesSection() {
             <span className="block text-primary">Combate a Incêndio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos uma gama completa de serviços para manter sua empresa protegida e em conformidade 
+            Oferecemos uma gama completa de serviços para manter seu patrimônio protegido e em conformidade 
             com todas as normas de segurança contra incêndio.
           </p>
         </div>

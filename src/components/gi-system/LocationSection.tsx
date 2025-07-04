@@ -33,7 +33,7 @@ export default function LocationSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Estamos localizados no Recanto das Emas, Brasília DF. 
-            Nossa equipe está pronta para atendê-lo e desenvolver a melhor solução para sua empresa.
+            Nossa equipe está pronta para atendê-lo e desenvolver a melhor solução para seu patrimônio.
           </p>
         </div>
 
