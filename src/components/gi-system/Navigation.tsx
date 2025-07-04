@@ -50,7 +50,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/bcc36ae3-ba59-4d9b-b859-6d4ef8984711.png" 
+              src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" 
               alt="Gi System LTDA Logo" 
               className="h-12 w-auto"
             />
