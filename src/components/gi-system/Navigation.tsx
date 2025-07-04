@@ -40,71 +40,71 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Gi System LTDA Logo" className="h-24 w-auto" />
-            <div className="hidden sm:block">
-              <h1 className={`text-xl font-bold transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`}>Gi System</h1>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Gi System LTDA Logo" className="h-16 sm:h-20 md:h-24 w-auto" />
+            <div className="hidden xs:block">
+              <h1 className={`text-lg sm:text-xl font-bold transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`}>Gi System</h1>
               <p className={`text-xs transition-colors ${isInHeroSection ? 'text-white/70' : 'text-muted-foreground'}`}>Combate a Incêndio</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <button onClick={() => scrollToSection('inicio')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('sobre')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('servicos')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Serviços
             </button>
-            <button onClick={() => scrollToSection('depoimentos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('depoimentos')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection('localizacao')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('localizacao')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Localização
             </button>
-            <button onClick={() => scrollToSection('contato')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('contato')} className={`transition-colors font-medium text-sm lg:text-base ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
               Contato
             </button>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold shadow-soft">
+          <div className="hidden lg:block">
+            <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold shadow-soft text-sm px-4 py-2">
               Solicitar Orçamento
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className={`md:hidden transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <Button variant="ghost" size="icon" className={`lg:hidden transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
           </Button>
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && <div className="md:hidden mt-4 bg-card/95 backdrop-blur-md rounded-lg border border-border p-4 shadow-strong">
-            <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('inicio')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+        {isMenuOpen && <div className="lg:hidden mt-4 mx-4 bg-card/95 backdrop-blur-md rounded-lg border border-border p-6 shadow-strong">
+            <div className="flex flex-col space-y-6">
+              <button onClick={() => scrollToSection('inicio')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Início
               </button>
-              <button onClick={() => scrollToSection('sobre')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+              <button onClick={() => scrollToSection('sobre')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Sobre
               </button>
-              <button onClick={() => scrollToSection('servicos')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+              <button onClick={() => scrollToSection('servicos')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Serviços
               </button>
-              <button onClick={() => scrollToSection('depoimentos')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+              <button onClick={() => scrollToSection('depoimentos')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Depoimentos
               </button>
-              <button onClick={() => scrollToSection('localizacao')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+              <button onClick={() => scrollToSection('localizacao')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Localização
               </button>
-              <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
+              <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors text-left font-medium text-lg py-2">
                 Contato
               </button>
-              <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold mt-4">
+              <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold mt-6 w-full py-3 text-base">
                 Solicitar Orçamento
               </Button>
             </div>

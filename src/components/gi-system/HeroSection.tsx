@@ -42,7 +42,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="inicio" className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen flex items-center">
+    <section id="inicio" className="relative pt-16 sm:pt-20 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen flex items-center">
       {/* Background Images with Rotation */}
       <div className="absolute inset-0">
         {backgroundImages.map((image, index) => (
@@ -69,27 +69,28 @@ export default function HeroSection() {
           </div>
           
           {/* Main Heading */}
-          <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          <div className="space-y-4 sm:space-y-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
               Proteção e 
               <span className="block text-accent">Segurança</span>
               para o seu patrimônio
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
               Somos referência em sistemas de combate a incêndio em Brasília DF. 
               Soluções completas para manter seu patrimônio protegido e em conformidade com as normas da ABNT.
             </p>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 sm:px-0">
             <Button 
               size="lg" 
               onClick={handleContactClick} 
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold shadow-strong"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold shadow-strong w-full sm:w-auto text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
             >
-              Solicitar Orçamento Gratuito
+              <span className="hidden sm:inline">Solicitar Orçamento Gratuito</span>
+              <span className="sm:hidden">Solicitar Orçamento</span>
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
             
@@ -97,30 +98,31 @@ export default function HeroSection() {
               variant="outline" 
               size="lg" 
               onClick={scrollToServices}
-              className="border-white/20 text-white bg-white/5 hover:bg-white/10 backdrop-blur-sm"
+              className="border-white/20 text-white bg-white/5 hover:bg-white/10 backdrop-blur-sm w-full sm:w-auto text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
             >
-              Conheça Nossos Serviços
+              <span className="hidden sm:inline">Conheça Nossos Serviços</span>
+              <span className="sm:hidden">Nossos Serviços</span>
             </Button>
           </div>
 
           {/* Feature Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">
-              <Shield className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Segurança Certificada</h3>
-              <p className="text-primary-foreground/80">Todos os nossos sistemas seguem rigorosamente as normas de segurança</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16 px-4 sm:px-0">
+            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-4 sm:p-6 text-center">
+              <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-accent mx-auto mb-3 sm:mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold text-primary-foreground mb-2">Segurança Certificada</h3>
+              <p className="text-sm sm:text-base text-primary-foreground/80">Todos os nossos sistemas seguem rigorosamente as normas de segurança</p>
             </Card>
             
-            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">
-              <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">15+ Anos de Experiência</h3>
-              <p className="text-primary-foreground/80">Mais de uma década protegendo patrimônios em Brasília e região</p>
+            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-4 sm:p-6 text-center">
+              <Clock className="w-10 h-10 sm:w-12 sm:h-12 text-accent mx-auto mb-3 sm:mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold text-primary-foreground mb-2">15+ Anos de Experiência</h3>
+              <p className="text-sm sm:text-base text-primary-foreground/80">Mais de uma década protegendo patrimônios em Brasília e região</p>
             </Card>
             
-            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-6 text-center">
-              <Award className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Qualidade Garantida</h3>
-              <p className="text-primary-foreground/80">Instalação, manutenção e treinamento com excelência comprovada</p>
+            <Card className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 p-4 sm:p-6 text-center sm:col-span-2 lg:col-span-1">
+              <Award className="w-10 h-10 sm:w-12 sm:h-12 text-accent mx-auto mb-3 sm:mb-4" />
+              <h3 className="text-base sm:text-lg font-semibold text-primary-foreground mb-2">Qualidade Garantida</h3>
+              <p className="text-sm sm:text-base text-primary-foreground/80">Instalação, manutenção e treinamento com excelência comprovada</p>
             </Card>
           </div>
         </div>
