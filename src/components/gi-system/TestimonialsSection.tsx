@@ -7,7 +7,7 @@ export default function TestimonialsSection() {
     {
       name: "Maria Silva",
       company: "Patrimônio Industrial ABC",
-      role: "Gerente de Segurança",
+      role: "Gerente de Segurança", 
       content: "A Gi System foi fundamental para adequarmos nosso patrimônio às normas de segurança. Profissionais competentes e serviço de excelente qualidade.",
       rating: 5
     },
@@ -23,6 +23,13 @@ export default function TestimonialsSection() {
       company: "Clínica Médica Saúde+",
       role: "Diretora Administrativa",
       content: "Excelente atendimento desde o primeiro contato. A manutenção preventiva que fazem é muito confiável. Nossa clínica está sempre protegida.",
+      rating: 5
+    },
+    {
+      name: "Carlos Pereira",
+      company: "Condomínio Residencial Parque Verde",
+      role: "Síndico",
+      content: "Parabéns à empresa pelo excelente trabalho! Sua atuação é fundamental para a segurança de todos. Agradecemos por sua dedicação e profissionalismo em nosso Condomínio.",
       rating: 5
     }
   ];
@@ -64,7 +71,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-6 relative hover:shadow-strong transition-all duration-300 border-border hover:border-primary/30">
               {/* Quote Icon */}
