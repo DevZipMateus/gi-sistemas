@@ -1,9 +1,17 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ArrowRight } from "lucide-react";
 
 export default function TestimonialsSection() {
   const testimonials = [
+    {
+      name: "Junielle",
+      company: "Antares Club",
+      role: "Adiministradora",
+      content: "Parabéns à empresa pelo excelente trabalho! Sua atuação é fundamental para a segurança de todos. Agradecemos por sua dedicação e profissionalismo em nosso Condomínio.",
+      rating: 5
+    },
     {
       name: "Maria Silva",
       company: "Patrimônio Industrial ABC",
@@ -23,13 +31,6 @@ export default function TestimonialsSection() {
       company: "Clínica Médica Saúde+",
       role: "Diretora Administrativa",
       content: "Excelente atendimento desde o primeiro contato. A manutenção preventiva que fazem é muito confiável. Nossa clínica está sempre protegida.",
-      rating: 5
-    },
-    {
-      name: "Junielle",
-      company: "Antares Club",
-      role: "Adiministradora",
-      content: "Parabéns à empresa pelo excelente trabalho! Sua atuação é fundamental para a segurança de todos. Agradecemos por sua dedicação e profissionalismo em nosso Condomínio.",
       rating: 5
     }
   ];
