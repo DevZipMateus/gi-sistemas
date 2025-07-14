@@ -26,9 +26,9 @@ export default function TestimonialsSection() {
       rating: 5
     },
     {
-      name: "Carlos Pereira",
-      company: "Condomínio Residencial Parque Verde",
-      role: "Síndico",
+      name: "Junielle",
+      company: "Antares Club",
+      role: "Adiministradora",
       content: "Parabéns à empresa pelo excelente trabalho! Sua atuação é fundamental para a segurança de todos. Agradecemos por sua dedicação e profissionalismo em nosso Condomínio.",
       rating: 5
     }
