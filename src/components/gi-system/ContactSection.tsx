@@ -1,10 +1,11 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Clock, Send, ArrowRight } from "lucide-react";
 
 export default function ContactSection() {
   const handleWhatsAppClick = () => {
-    const phone = "5561993368116";
+    const phone = "5561992532859";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -50,7 +51,7 @@ export default function ContactSection() {
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold"
                 >
                   <Phone className="mr-2 w-4 h-4" />
-                  WhatsApp: (61) 99336-8116
+                  WhatsApp: (61) 99253-2859
                 </Button>
                 
                 <Button 

@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -30,7 +31,7 @@ export default function Navigation() {
     setIsMenuOpen(false);
   };
   const handleContactClick = () => {
-    const phone = "5561993368116";
+    const phone = "5561992532859";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
