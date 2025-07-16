@@ -57,7 +57,7 @@ export default function ContactSection() {
                 <Button 
                   onClick={handleEmailClick}
                   variant="outline"
-                  className="w-full border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                  className="w-full border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-300"
                 >
                   <Mail className="mr-2 w-4 h-4" />
                   E-mail: gcsistemas5@gmail.com
@@ -118,7 +118,7 @@ export default function ContactSection() {
               <Button 
                 onClick={handleWhatsAppClick}
                 variant="outline"
-                className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10"
+                className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary transition-all duration-300"
               >
                 Solicitar Orçamento
                 <ArrowRight className="ml-2 w-4 h-4" />
