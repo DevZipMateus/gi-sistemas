@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ArrowRight } from "lucide-react";
@@ -35,9 +36,7 @@ export default function TestimonialsSection() {
   ];
 
   const handleContactClick = () => {
-    const phone = "+556199253-2859";
-    const message = "Olá! Vi os depoimentos de seus clientes e gostaria de solicitar um orçamento.";
-    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = "https://api.whatsapp.com/send/?phone=5561992532859&text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+para+sistemas+de+combate+a+inc%C3%AAndio.&type=phone_number&app_absent=0";
     window.open(whatsappUrl, '_blank');
   };
 
