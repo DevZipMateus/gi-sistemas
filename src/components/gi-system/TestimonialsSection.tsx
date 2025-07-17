@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star, Quote, ArrowRight } from "lucide-react";
@@ -36,7 +35,7 @@ export default function TestimonialsSection() {
   ];
 
   const handleContactClick = () => {
-    const phone = "5561993368116";
+    const phone = "+556199253-2859";
     const message = "Olá! Vi os depoimentos de seus clientes e gostaria de solicitar um orçamento.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
