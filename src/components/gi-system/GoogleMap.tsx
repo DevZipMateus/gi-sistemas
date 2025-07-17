@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 import { Button } from '@/components/ui/button';
@@ -77,7 +78,7 @@ export default function GoogleMap({
               ${address}
             </p>
             <p style="margin: 0; font-size: 12px;">
-              <strong>Telefone:</strong> (61) 99336-8116<br>
+              <strong>Telefone:</strong> +55 (61) 99253-2859<br>
               <strong>E-mail:</strong> gcsistemas5@gmail.com
             </p>
           </div>

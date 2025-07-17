@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Navigation, ArrowRight } from "lucide-react";
@@ -11,7 +12,7 @@ export default function LocationSection() {
   };
 
   const handleContactClick = () => {
-    const phone = "5561993368116";
+    const phone = "+556199253-2859";
     const message = "Olá! Gostaria de agendar uma visita ou reunião.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -123,7 +124,7 @@ export default function LocationSection() {
                   <h3 className="text-lg font-semibold text-foreground mb-2">Contato Direto</h3>
                   <div className="space-y-2">
                     <p className="text-muted-foreground">
-                      <span className="font-medium">Telefone:</span> (61) 99336-8116
+                      <span className="font-medium">Telefone:</span> +55 (61) 99253-2859
                     </p>
                     <p className="text-muted-foreground">
                       <span className="font-medium">E-mail:</span> gcsistemas5@gmail.com

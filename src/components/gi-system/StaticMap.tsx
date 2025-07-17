@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { MapPin } from 'lucide-react';
@@ -58,7 +59,7 @@ export default function StaticMap({ className = '' }: StaticMapProps) {
           ${address}
         </p>
         <div style="margin: 0; font-size: 12px; color: #333;">
-          <strong>Telefone:</strong> (61) 99336-8116<br>
+          <strong>Telefone:</strong> +55 (61) 99253-2859<br>
           <strong>E-mail:</strong> gcsistemas5@gmail.com
         </div>
       </div>
