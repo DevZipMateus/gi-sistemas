@@ -4,7 +4,7 @@ import { Shield, Users, Target, TrendingUp, ArrowRight } from "lucide-react";
 
 export default function AboutSection() {
   const handleContactClick = () => {
-    const phone = "5561993368116";
+    const phone = "+556199253-2859";
     const message = "Olá! Gostaria de saber mais sobre a Gi System e seus serviços.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
