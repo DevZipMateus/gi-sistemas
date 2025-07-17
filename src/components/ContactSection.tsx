@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Instagram, Facebook, MessageCircle } from "lucide-react";
@@ -6,11 +5,17 @@ import { openWhatsApp } from "@/utils/whatsapp";
 
 export default function ContactSection() {
   const handleContactClick = () => {
-    openWhatsApp("Olá! Gostaria de entrar em contato com a Impulso Empreendedor para tirar algumas dúvidas.");
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de entrar em contato com a Impulso Empreendedor para tirar algumas dúvidas.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleQuestionClick = () => {
-    openWhatsApp("Olá! Tenho algumas dúvidas sobre os workshops da Impulso Empreendedor. Podem me ajudar?");
+    const phone = "5561992532859";
+    const message = "Olá! Tenho algumas dúvidas sobre os workshops da Impulso Empreendedor. Podem me ajudar?";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -80,7 +85,7 @@ export default function ContactSection() {
                   <Phone className="w-5 h-5 text-cyan-300" />
                   <div>
                     <div className="text-white font-medium">Telefone</div>
-                    <div className="text-white/70">(55) 9999-9999</div>
+                    <div className="text-white/70">(61) 99253-2859</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">

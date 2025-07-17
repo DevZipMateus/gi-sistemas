@@ -1,11 +1,12 @@
-
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isInHeroSection, setIsInHeroSection] = useState(true);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -20,6 +21,7 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -30,6 +32,7 @@ export default function Navigation() {
     }
     setIsMenuOpen(false);
   };
+
   const handleContactClick = () => {
     const phone = "5561992532859";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";
@@ -37,7 +40,9 @@ export default function Navigation() {
     window.open(whatsappUrl, '_blank');
     setIsMenuOpen(false);
   };
-  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'}`}>
+
+  return (
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -85,7 +90,8 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && <div className="md:hidden mt-4 bg-card/95 backdrop-blur-md rounded-lg border border-border p-4 shadow-strong">
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 bg-card/95 backdrop-blur-md rounded-lg border border-border p-4 shadow-strong">
             <div className="flex flex-col space-y-4">
               <button onClick={() => scrollToSection('inicio')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
                 Início
@@ -109,7 +115,9 @@ export default function Navigation() {
                 Solicitar Orçamento
               </Button>
             </div>
-          </div>}
+          </div>
+        )}
       </div>
-    </nav>;
+    </nav>
+  );
 }

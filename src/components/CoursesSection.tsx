@@ -40,11 +40,17 @@ export default function CoursesSection() {
   ];
 
   const handleEnrollClick = (courseTitle: string) => {
-    openWhatsApp(`Olá! Gostaria de me inscrever no curso "${courseTitle}" da Impulso Empreendedor. Poderia me dar mais informações?`);
+    const phone = "5561992532859";
+    const message = `Olá! Gostaria de me inscrever no curso "${courseTitle}" da Impulso Empreendedor. Poderia me dar mais informações?`;
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleCalendarClick = () => {
-    openWhatsApp("Olá! Gostaria de ver o calendário completo de workshops da Impulso Empreendedor.");
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de ver o calendário completo de workshops da Impulso Empreendedor.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

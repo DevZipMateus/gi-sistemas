@@ -4,7 +4,10 @@ import { openWhatsApp } from "@/utils/whatsapp";
 
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    openWhatsApp();
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de solicitar informações sobre cursos e workshops.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

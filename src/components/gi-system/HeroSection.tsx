@@ -24,6 +24,7 @@ export default function HeroSection() {
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
+  
   const handleContactClick = () => {
     const phone = "5561992532859";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";

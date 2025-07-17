@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Target, Users } from "lucide-react";
@@ -15,11 +14,17 @@ export default function HeroSection() {
   };
 
   const handleCoursesClick = () => {
-    openWhatsApp("Olá! Gostaria de conhecer os cursos disponíveis na Impulso Empreendedor.");
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de conhecer os cursos disponíveis na Impulso Empreendedor.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleLearnMoreClick = () => {
-    openWhatsApp("Olá! Gostaria de saber mais sobre a Impulso Empreendedor e seus workshops.");
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de saber mais sobre a Impulso Empreendedor e seus workshops.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

@@ -57,7 +57,7 @@ export default function ContactSection() {
                 <Button 
                   onClick={handleEmailClick}
                   variant="outline"
-                  className="w-full border-primary-foreground/50 text-primary-foreground bg-primary/10 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
+                  className="w-full border-primary-foreground/30 text-primary-foreground bg-primary/20 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
                 >
                   <Mail className="mr-2 w-4 h-4" />
                   E-mail: gcsistemas5@gmail.com

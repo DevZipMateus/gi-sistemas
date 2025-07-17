@@ -41,7 +41,10 @@ export default function Navigation() {
   };
 
   const handleEnrollClick = () => {
-    openWhatsApp("Olá! Gostaria de me inscrever nos workshops da Impulso Empreendedor.");
+    const phone = "5561992532859";
+    const message = "Olá! Gostaria de me inscrever nos workshops da Impulso Empreendedor.";
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
     setIsMenuOpen(false);
   };
 
