@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -78,7 +79,7 @@ export default function ServicesSection() {
   ];
 
   const handleServiceClick = (serviceName: string) => {
-    const phone = "5561992532859";
+    const phone = "+556199253-2859";
     const message = `Olá! Gostaria de solicitar um orçamento para ${serviceName}.`;
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

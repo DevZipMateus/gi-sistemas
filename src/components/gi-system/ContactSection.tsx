@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Clock, Send, ArrowRight } from "lucide-react";
 
 export default function ContactSection() {
   const handleWhatsAppClick = () => {
-    const phone = "5561992532859";
+    const phone = "+556199253-2859";
     const message = "Olá! Gostaria de solicitar um orçamento para sistemas de combate a incêndio.";
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -51,13 +51,13 @@ export default function ContactSection() {
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold"
                 >
                   <Phone className="mr-2 w-4 h-4" />
-                  WhatsApp: (61) 99253-2859
+                  WhatsApp: +55 (61) 99253-2859
                 </Button>
                 
                 <Button 
                   onClick={handleEmailClick}
                   variant="outline"
-                  className="w-full border-primary-foreground/30 text-primary-foreground bg-primary/20 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
+                  className="w-full border-primary-foreground/30 text-primary-foreground bg-primary/10 hover:bg-primary-foreground hover:text-primary transition-all duration-300"
                 >
                   <Mail className="mr-2 w-4 h-4" />
                   E-mail: gcsistemas5@gmail.com
