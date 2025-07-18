@@ -13,6 +13,13 @@ export default function TestimonialsSection() {
       rating: 5
     },
     {
+      name: "Eliane",
+      company: "Condomínio Villa Borghese",
+      role: "Síndica",
+      content: "A Gi System reformulou toda a estrutura de incêndio, SPDA e alta tensão do condomínio. Antes, sofríamos quedas frequentes de energia e riscos à segurança. Desde o primeiro contato, o atendimento foi excelente e muito profissional. Com a Gi System, as interrupções cessaram mesmo em tempestades, e o sistema de incêndio está totalmente dentro das normas. Essa parceria traz grande satisfação, segurança e confiança à gestão do condomínio.",
+      rating: 5
+    },
+    {
       name: "Maria Silva",
       company: "Patrimônio Industrial ABC",
       role: "Gerente de Segurança", 
