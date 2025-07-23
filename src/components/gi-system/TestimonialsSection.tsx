@@ -18,27 +18,6 @@ export default function TestimonialsSection() {
       role: "Síndica",
       content: "A Gi System reformulou toda a estrutura de incêndio, SPDA e alta tensão do condomínio. Antes, sofríamos quedas frequentes de energia e riscos à segurança. Desde o primeiro contato, o atendimento foi excelente e muito profissional. Com a Gi System, as interrupções cessaram mesmo em tempestades, e o sistema de incêndio está totalmente dentro das normas. Essa parceria traz grande satisfação, segurança e confiança à gestão do condomínio.",
       rating: 5
-    },
-    {
-      name: "Maria Silva",
-      company: "Patrimônio Industrial ABC",
-      role: "Gerente de Segurança", 
-      content: "A Gi System foi fundamental para adequarmos nosso patrimônio às normas de segurança. Profissionais competentes e serviço de excelente qualidade.",
-      rating: 5
-    },
-    {
-      name: "João Santos",
-      company: "Condomínio Residencial XYZ",
-      role: "Síndico",
-      content: "Trabalho impecável na instalação do sistema de alarme de incêndio. Equipe pontual, organizada e muito profissional. Recomendo!",
-      rating: 5
-    },
-    {
-      name: "Ana Costa",
-      company: "Clínica Médica Saúde+",
-      role: "Diretora Administrativa",
-      content: "Excelente atendimento desde o primeiro contato. A manutenção preventiva que fazem é muito confiável. Nossa clínica está sempre protegida.",
-      rating: 5
     }
   ];
 
@@ -77,7 +56,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-6 relative hover:shadow-strong transition-all duration-300 border-border hover:border-primary/30">
               {/* Quote Icon */}
