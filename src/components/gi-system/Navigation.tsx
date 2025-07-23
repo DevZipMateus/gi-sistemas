@@ -46,7 +46,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/lovable-uploads/3bf93ee8-a8fe-462e-aff9-695a2d975f57.png" alt="Gi System LTDA Logo" className="h-16 w-auto" />
+            <img src="/lovable-uploads/37735f6a-46e3-40e1-b6d3-0ecfd6760be2.png" alt="Gi System LTDA Logo" className="h-16 w-auto" />
             <div className="hidden sm:block">
               <h1 className={`text-xl font-bold transition-colors ${isInHeroSection ? 'text-white' : 'text-foreground'}`}>Gi System</h1>
               <p className={`text-xs transition-colors ${isInHeroSection ? 'text-white/70' : 'text-muted-foreground'}`}>Combate a Incêndio</p>
@@ -55,29 +55,29 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('inicio')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('sobre')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('servicos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Serviços
             </button>
-            <button onClick={() => scrollToSection('depoimentos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('depoimentos')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection('localizacao')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('localizacao')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Localização
             </button>
-            <button onClick={() => scrollToSection('contato')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'}`}>
+            <button onClick={() => scrollToSection('contato')} className={`transition-colors font-medium ${isInHeroSection ? 'text-white hover:text-secondary' : 'text-foreground hover:text-primary'}`}>
               Contato
             </button>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold shadow-soft">
+            <Button onClick={handleContactClick} className="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary text-primary-foreground font-semibold shadow-soft">
               Solicitar Orçamento
             </Button>
           </div>
@@ -110,7 +110,7 @@ export default function Navigation() {
               <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors text-left font-medium">
                 Contato
               </button>
-              <Button onClick={handleContactClick} className="bg-primary hover:bg-primary-dark text-primary-foreground font-semibold mt-4">
+              <Button onClick={handleContactClick} className="bg-gradient-to-r from-primary to-secondary hover:from-primary-dark hover:to-secondary text-primary-foreground font-semibold mt-4">
                 Solicitar Orçamento
               </Button>
             </div>
